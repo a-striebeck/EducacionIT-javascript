@@ -8,7 +8,7 @@ const propertyData   = [
                         {dwellingType: 'Depósito Logística', pFactor: 1.072}];
 
 const locationData   = [
-                        {location: 'CABA', lFactor: 1.013},
-                        {location: 'Tandil', lFactor: 1.004},
-                        {location: 'Costa Atlántica', lFactor: 1.029},
-                        {location: 'Patagonia', lFactor: 1.000},];
+                        {name: 'CABA', lFactor: 1.013},
+                        {name: 'Tandil', lFactor: 1.004},
+                        {name: 'Costa Atlántica', lFactor: 1.029},
+                        {name: 'Patagonia', lFactor: 1.000},];
