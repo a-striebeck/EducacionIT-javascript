@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     const baseCost = 1.16;
-    let propertyFM = 0;
-    let locationFM = 0;
-    const costoM2 = 1.16;
     const selectedProperty = document.querySelector("select#propiedad");
     const selectedLocation = document.querySelector("select#ubicacion");
     const inputM2 = document.querySelector("input#metros2");
