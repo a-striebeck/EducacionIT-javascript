@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const selectedLocation = document.querySelector("select#ubicacion");
     const inputM2 = document.querySelector("input#metros2");
     const button = document.querySelector("button#button");
+    const mainDiv = document.getElementById("mainDiv");
 
     function selectPropertyType() {
         let propertyType;
@@ -46,12 +47,19 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     button.onclick = function () {
-        if (getPropertyFactor() && getLocationFactor() && parseInt(inputM2.value) !== '') {
+        mainDiv.classList.add("div-blocked");
+        button.innerHTML = '<img src="images/animation.gif>';
+
+        setTimeout(() => {
+            if (getPropertyFactor() && getLocationFactor() && parseInt(inputM2.value) !== '') {
             let insurancePrice = getPropertyFactor() * getLocationFactor() * parseInt(inputM2.value) * baseCost;
-            console.log("Resultado de la Póliza: $ " + insurancePrice);
-        } else {
+            spanPoliza.textContent = insurancePrice.toFixed(2);
+            } else {
             console.warn("Hubo un error en los datos ingresados.");
-        }
+            }
+            mainDiv.classList.remove("div-blocked");
+            button.textContent = 'cotizar';
+        }, 3500)
     }
 
     selectPropertyType();
