@@ -6,4 +6,5 @@ El codigo HTML Y CSS no son de mi autoria, sino que fueron provistos por la inst
 
 ------------------------------------------------------------------------------------------------------------------------
 This repository contains an integrative project proposed by EducacionIT in order to test the concepts learned during the course.
+
 The HTML and CSS code was not authored by me. It was provided by the institution and I just modified a few lines to adjust it to my JS code.
